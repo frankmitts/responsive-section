@@ -10,49 +10,114 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: "Noto Sans", sans-serif;
-  font: 1.5rem/100%;
+
+  font: normal 100%/1.3 "Noto Sans", sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.wrapper {
+body {
+  margin: 0;
+}
+
+section {
   background-color: #e5c30a;
-  max-width: 45em;
   overflow: hidden;
 }
 
-.img-letter{
-  width: 50%;
-  margin-top: 1rem;
+.wrapper {
+  padding: 1.3rem;
+  max-width: 45em;
+  margin: 0 auto;
 }
 
 .img-flex {
   display: block;
-  float: right;
+  width: 100%;
+}
+
+.section-letter {
   width: 50%;
-  margin-top: 1rem;
+  float: left;
 }
 
-.section {
+.section-icon {
+  width: 50%;
+  float: left;
+}
+
+section h2 {
   margin: 0;
-  background-color: #e5c30a;
 }
 
-.section-body {
-  text-align: left;
-}
-
-p {
+section p {
   margin: 0;
-  padding-left: 1rem;
-  padding-right: 1.3rem;
 }
 
-h2 {
-  margin: 0;
-  padding-left: 1rem;
-  padding-right: 1.3rem;
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  .section-icon {
+    width: 41%;
+    margin-left: 2rem;
+  }
+
+  .section-letter {
+    width: 41%;
+    margin-left: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-icon {
+    float: right;
+    width: 14%;
+  }
+
+  .section-letter {
+    width: 14%;
+    margin-right: 2.3rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    margin-left: 0;
+    padding-bottom: 3rem;
+  }
+
+  .section-letter,
+  .section-icon {
+    width: 17%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.6;
+  }
+
 }
