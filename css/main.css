@@ -1,0 +1,58 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font: 1.5rem/100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  background-color: #e5c30a;
+  max-width: 45em;
+  overflow: hidden;
+}
+
+.img-letter{
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.img-flex {
+  display: block;
+  float: right;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.section {
+  margin: 0;
+  background-color: #e5c30a;
+}
+
+.section-body {
+  text-align: left;
+}
+
+p {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1.3rem;
+}
+
+h2 {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1.3rem;
+}
